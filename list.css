@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+li {
+  margin-top: 5px;
+  border: 6px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px 2px rgba(rgb(225, 35, 231), green, blue, alpha);
+}
+}
+img {
+  width: auto;
+  height:auto;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px 10px rgba(100, 0, 0, 4);
+}
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+  box-sizing: border-box;
+}
+body {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  font-family: 'Rubik', sans-serif;
+  background-color: rgb(200, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display:grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows: 50px 1fr 170px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  margin: 0;
+}
+header h8{
+  position: relative;
+    padding: 50px 50px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1f2326;
+    text-transform: uppercase;
+    letter-spacing: .10px;
+    transition: all .25s;
+}
+header img {
+  height: 50px;
+  width: auto;
+} 
+
+header h1{
+  margin:0;
+  font-size:20px;
+}
+h1{
+  font-size:15px;
+}
+
+header {
+  grid-area: header ;
+  background-color:rgb(212, 88, 88) ;
+  display:grid;
+  grid-template-columns:50px 1fr 50px ;
+  align-items: center;
+
+
+}
+
+main {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  grid-area: main;
+  background-color: rgb(200, 255, 255);
+}
+main section.video{
+  margin:20px auto;
+  width:560px ;
+  height: 315px;
+}
+  /* можно добавить немного отступа слева, а то меню прижалось прямо к карточкам *
+/*
+
+main-selection {
+
+  у тебя нет такого тега в коде
+
+  пиши правильный селектор ↓
+*/
+main section {
+  width:1000px ;
+  display:grid;
+  grid-template-columns:100px 1fr ;
+  column-gap:10px ;
+  background-color:plum;
+  border-radius:10px ;
+  padding:10px;
+  margin-bottom:16px ; 
+}
+main section img{
+  width:100px; /* у тебя высота была 10px — это очень мало */
+  height:10;
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(172, 108, 197);
+}
+footer-columns{
+  display:flex ;
+}
+footer nav{
+  background: none;
+}
+.post {
+  background-color: rgb(rgb(75, 75, 75);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+ }
+ 

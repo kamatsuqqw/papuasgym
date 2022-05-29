@@ -1,0 +1,41 @@
+.menu {
+  padding-top: 0px;
+  /* padding-left: auto; паддинги нельзя указывать как auto */
+  display: grid;
+  grid-template-columns: repeat(3, 150px); /* надо изменить сетку */
+  column-gap: 3px; /* пробелы теперь надо делать между колонками */
+  justify-self: center;
+}
+.menu__submenu {
+  position: relative;
+  /* padding: 15px 15px; здесь отступы не нужны */
+}
+.menu .menu__submenu:hover ul {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer; /* делаем курсор как на ссылках  */
+}
+.menu .menu__submenu ul {
+  opacity: 0;
+  transition: 0.5s opacity; /* надо всегда указывать какое свойство должно анимироваться */
+  position: absolute; /* stiсky используется для другого, оно фиксирует блок во время прокрутки родителя */
+  left: 10px;
+  top: 30px; /* теперь топ должен быть примерно равен высоте строки меню */
+  width: max-content;
+  background-color: rgb(18, 206, 118);
+  list-style-type: none;
+  padding: 0;
+  color: white;
+  border-radius: 15px;
+  border-width: 300px;
+  border-right-width: 100px;
+}
+.menu__submenu ul li {
+  padding: 8px 4px;
+}
+
+.menu h6 {
+  font-size: 16px; /* задаем размер шрифта в меню */
+  margin: 0; /* обнуляем отступы, которые назначает браузер по умолчанию */
+  padding: 0;
+}
